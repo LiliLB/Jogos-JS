@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jokenpo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defers></script>
+</head>
+<body>
+    <div id="main">
+
+        <h1>Pedra, Papel e Tesoura</h1>
+    
+        <label for="placar-jogador" id="label-jogador">Jogador</label>
+        <input type="text" id="placar-jogador" class="placar" readonly="readonly" value="0" />
+        X 
+        
+        <input type="text" id="placar-computador" class="placar" readonly="readonly" value="0" />
+        <label for="placar-computador">Computador</label>
+    
+        <br /><br />
+    
+        <select id="opcaojogador">
+            <option value=""> -- Escolha a opção -- </option>
+            <option value="pedra"> Pedra </option>
+            <option value="papel"> Papel </option>
+            <option value="tesoura"> Tesoura </option>
+        </select>
+    
+        <input type="button" value="Jogar!" id="btn-action" />
+    
+        <br /><br /><br />
+    
+        <table>
+            <tr>
+                <th id="th-jogador">Jogador</th>
+                <td>&nbsp;</td>
+                <th>Computador</th>
+            </tr>
+            <tr>
+                <td id="cmp-jogador">--</td>
+                <td> X </td>
+                <td id="cmp-computador">--</td>
+            </tr>
+            <tr>
+                <th>Vencedor: </th>
+                <td>&nbsp;</td>
+                <td id="cmp-vencedor">--</td>
+            </tr>        
+        </table>
+    
+    </div>
+</body>
+</html>
